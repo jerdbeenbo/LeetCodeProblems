@@ -19,7 +19,7 @@ public class Solution {
 
         //check rules
         if((captialAmount == word.Length) || ((capitalFirst == true) && (captialAmount == 1) || (captialAmount == 0))) {
-            //whole word is captialised or only first letter is capitalised or there are no capitals
+            //whole word is captialised, or only first letter is capitalised, or there are no capitals
             return true;
         }
         else if (captialAmount > 1){
