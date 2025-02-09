@@ -22,7 +22,7 @@ impl Solution {
         //check if the square root is not a clean decimal
         if sqrt_nf.fract() != 0.0 {
 
-            println!("Making it into the first if");
+            //println!("Making it into the first if");
             
             //first check the cube root
             let nf_64: f64 = nf as f64;
