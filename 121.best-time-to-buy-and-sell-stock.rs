@@ -44,7 +44,18 @@ impl Solution {
 
         //check if high index is lower than low_index (solution wasn't found)
         if high_index < low_index {
-            return 0;
+            
+            //check if high_index isn't 0
+            if high_index == 0 as i32 {
+                //reasign low_index to a value before high_index
+                println!("getting in here");
+                low_index = 0;
+                for i in 0..high_index as usize {
+                    if prices[i] < low_index {
+                        low_index = prices[i];
+                    }
+                }
+            }
         }
 
         println!("this is low {} and this is high {}", low_index, high_index);
